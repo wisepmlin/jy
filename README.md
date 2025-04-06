@@ -55,5 +55,4 @@ JY是一款现代化的iOS应用，提供流畅的用户体验和丰富的功能
 5. 创建Pull Request
 
 ## 许可证
-
 [MIT License](LICENSE)
