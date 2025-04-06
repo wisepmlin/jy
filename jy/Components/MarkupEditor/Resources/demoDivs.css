@@ -1,0 +1,106 @@
+/********************************************************************************
+ * 为指定类的DIV和BUTTON元素设置样式
+ */
+body {
+    font-family: -apple-system;
+    font: -apple-system-body;
+    caret-color: red;   /* Helps with debugging since should not appear */
+    font-size: 18px;
+}
+
+code {
+    display: block;
+    background-color: #FF6A00;
+    border-radius: 4px;
+    padding: 1px 4px;
+    color: #ffffff;
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+    white-space: pre;
+    white-space: normal; /* 或 white-space: pre; */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.p {
+    margin: 8px 0;
+    padding: 2px 4px;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin: 8px 0;
+    padding: 2px 4px;
+    align-items: center;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.section {
+    margin: 8px 0;
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 18px;
+    overflow: clip;
+    justify-content: space-between;
+    line-height: 1.5;
+    transition: background-color 0.3s ease;
+    @media (prefers-color-scheme: light) {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    @media (prefers-color-scheme: dark) {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* 当内容超出边界时，默认裁剪日志条目 */
+.content {
+    overflow: clip;
+    padding: 2px 4px;
+    transition: color 0.3s ease;
+}
+
+/* 当内容获得焦点时，显示"正常"边界之外的任何内容，
+ * 这样我们就可以滚动查看代码示例
+ */
+.content:focus {
+    outline: none;
+    overflow: visible;
+}
+
+.markupbutton {
+    background-color: transparent;
+    white-space: nowrap;
+    border: none;
+    font-size: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.markupbuttongroup {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+    @media (prefers-color-scheme: light) {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    @media (prefers-color-scheme: dark) {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
